@@ -1,31 +1,46 @@
 {
-  "name": "chess.js",
+  "name": "chess26.js",
   "version": "0.10.3-dev",
   "description": "A Javascript chess library for chess move generation/validation, piece placement/movement, and check/checkmate/draw detection",
   "author": "Jeff Hlywa <jhlywa@gmail.com> (https://github.com/jhlywa)",
   "license": "BSD-2-Clause",
-  "homepage": "https://github.com/jhlywa/chess.js",
-  "keywords": ["chess"],
+  "homepage": "https://github.com/charlie8230/chess.js",
+  "keywords": [
+    "chess"
+  ],
   "main": "chess.js",
   "filename": "chess.min.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhlywa/chess.js.git"
+    "url": "https://github.com/charlie8230/chess.js.git"
   },
-  "npmName": "chess.js",
+  "npmName": "chess26.js",
   "npmFileMap": [
     {
       "basePath": "",
-      "files": ["chess*.js"]
+      "files": [
+        "chess*.js"
+      ]
     }
   ],
   "devDependencies": {
-    "mocha": "^2.2.4",
     "chai": "^2.3.0",
+    "mocha": "^2.2.4",
     "uglify-js": "^2.4.21"
   },
   "scripts": {
     "test": "mocha",
+    "build:dev": "webpack --config webpack.config.js --mode development --watch",
+    "build": "webpack --mode production",
+    "build:test": "webpack --config webpack.config.test.js --mode development --watch",
     "minify": "uglifyjs chess.js -c -m --comments 'license' > chess.min.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "serve": "^11.2.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
   }
 }
