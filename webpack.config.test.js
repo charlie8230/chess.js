@@ -1,11 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './chess.js',
+  entry: './testchess.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'chess26.js',
-    library: 'chess26'
+    filename: 'test.min.js'
   },
   module: {
     rules: [
