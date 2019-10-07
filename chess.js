@@ -33,7 +33,7 @@
  * https://github.com/jhlywa/chess.js/blob/master/LICENSE
  */
 
-module.exports = function Chess(fen) {
+var Chess = function (fen) {
   var BLACK = 'b';
   var WHITE = 'w';
 
@@ -1739,3 +1739,5 @@ module.exports = function Chess(fen) {
     }
   };
 };
+
+export { Chess };

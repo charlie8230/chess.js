@@ -5,7 +5,8 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'chess26.js',
-    library: 'chess26'
+    library: 'Chess',
+    libraryTarget: 'umd',
   },
   module: {
     rules: [
