@@ -1,7 +1,6 @@
-if (typeof require != "undefined") {
-  var chai = require('chai');
-  var Chess = require('../chess').Chess;
-}
+
+var chai = require('chai');
+var Chess = require('../dist/chess26node').Chess;
 
 var assert = chai.assert;
 

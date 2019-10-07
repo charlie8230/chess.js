@@ -32,6 +32,7 @@
     "test": "mocha",
     "build:dev": "webpack --config webpack.config.js --mode development --watch",
     "build": "webpack --config webpack.config.js --mode production",
+    "build:node": "webpack --config webpack.config.node.js --mode production",
     "build:test": "webpack --config webpack.config.test.js --mode development --watch",
     "minify": "uglifyjs chess.js -c -m --comments 'license' > chess.min.js"
   },
