@@ -33,7 +33,7 @@
  * https://github.com/jhlywa/chess.js/blob/master/LICENSE
  */
 
-var Chess = function(fen) {
+var Chess = function (fen) {
   var BLACK = 'b';
   var WHITE = 'w';
 
@@ -1740,11 +1740,4 @@ var Chess = function(fen) {
   };
 };
 
-/* export Chess object if using node or any other CommonJS compatible
- * environment */
-if (typeof exports !== 'undefined') exports.Chess = Chess;
-/* export Chess object for any RequireJS compatible environment */
-if (typeof define !== 'undefined')
-  define(function() {
-    return Chess;
-  });
+export { Chess };
