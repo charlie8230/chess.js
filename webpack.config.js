@@ -4,7 +4,7 @@ module.exports = {
   entry: './chess.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'chess26.js',
+    filename: 'index.js',
     library: 'Chess',
     libraryTarget: 'umd'
   },
