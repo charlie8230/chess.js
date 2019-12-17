@@ -5,8 +5,8 @@ module.exports = {
   target: 'node',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'chess26node.js',
-
+    filename: 'index.js',
+    globalObject: 'this',
     library: 'Chess',
     libraryTarget: 'umd'
   },

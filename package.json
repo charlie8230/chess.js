@@ -1,8 +1,8 @@
 {
   "name": "chess26.js",
-  "version": "0.10.4",
+  "version": "0.10.55",
   "description": "A Javascript chess library for chess move generation/validation, piece placement/movement, and check/checkmate/draw detection",
-  "author": "Jeff Hlywa <jhlywa@gmail.com> (https://github.com/jhlywa)",
+  "author": "Jeff Hlywa <jhlywa@gmail.com> (https://github.com/jhlywa); Forked by Carlos Moran",
   "license": "BSD-2-Clause",
   "homepage": "https://github.com/charlie8230/chess.js",
   "keywords": [

@@ -1,7 +1,7 @@
 
 var chai = require('chai');
 var Chess = require('../dist/chess26node').Chess;
-
+console.log(Chess);
 var assert = chai.assert;
 
 describe("Perft", function() {
